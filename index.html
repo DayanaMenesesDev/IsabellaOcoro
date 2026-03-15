@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        /* html {
+            background-color: rgb(247, 4, 121);
+        } */
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb,#a18cd1);
+    background-size:400% 400%;
+    animation:fondo 12s ease infinite;
+}
+
+@keyframes fondo{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    background: rgba(255,255,255,0.9);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    max-width:500px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size:2.5em;
+    color:#ff4f81;
+}
+
+p{
+    font-size:1.2em;
+    color:#444;
+    line-height:1.6;
+}
+
+.hearts{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+footer{
+    margin-top:20px;
+    font-size:14px;
+    color:#777;
+}
+    </style>
+    <div class="card">
+
+<div class="hearts">💖 💕 💖</div>
+
+<h1>Para Ti</h1>
+
+<p>
+Hice esta pequeña página con mucho amor y cariño :3.
+</p>
+
+<p>
+Tal vez no sea perfecta,  
+pero cada línea fue hecha pensando en ti con amor compresion y ternura jajajaja.  
+Espero que te guste tanto como a mí me gustó hacerla.
+</p>
+
+<p>
+Gracias por existir, por tus risas,  
+y por los momentos que compartimos y por ser tan tu!.  
+💖
+</p>
+
+<p>
+¿Aceptas casarte conmigo en Litmatch? 😳
+</p>
+
+<footer>
+Con mucho cariño para Isabella Ocoró pri pra💌
+</footer>
+
+</div>
+
+
+
+    <script>
+
+        let tegusto;
+        let confirmacion;
+        let casar;
+
+        alert('siempre responde con un SI o NO')
+
+
+        do {
+            tegusto = prompt("te gusto?");
+        } while (tegusto.includes('no') || tegusto.length <= 1);
+
+        do {
+            confirmacion = prompt("Enserio te gustaria meterte conmigo?")
+        } while (confirmacion.includes('no'));
+        
+        do {
+            casar = prompt("te gustaria casarte en litmatch conmigo o mas adelante?")
+        } while (casar.includes('no'));
+
+
+
+
+    </script>
+</body>
+</html>
